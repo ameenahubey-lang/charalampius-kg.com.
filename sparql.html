@@ -189,10 +189,7 @@ FILTER(LANG(?label) = "it")
 FILTER(REGEX(STR(?label), "ambito russo", "i"))
 }
 ORDER BY ?label
-LIMIT 100</code></pre><p><a href="https://dati.cultura.gov.it/sparql?default-graph-uri=&amp;query=PREFIX+arco%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Farco%2F%3E%0D%0APREFIX+dc%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fobject+%3Flabel%0D%0AWHERE+%7B%0D%0A++%3Fobject+dc%3Atype+%22icona%22+%3B%0D%0A++++++++++a+arco%3AHistoricOrArtisticProperty+%3B%0D%0A++++++++++rdfs%3Alabel+%3Flabel+.%0D%0A%0D%0A++FILTER%28LANG%28%3Flabel%29+%3D+%22it%22%29%0D%0A++FILTER%28REGEX%28STR%28%3Flabel%29%2C+%22ambito+russo%22%2C+%22i%22%29%29%0D%0A%7D%0D%0AORDER+BY+%3Flabel%0D%0ALIMIT+100&amp;format=text%2Fhtml&amp;timeout=0&amp;signal_void=on"><u>RESULTS</u></a></p><p><strong><h3>Query Results</h3>
-
-
-</figure>Query 2. Identifying the icon of Saint
+LIMIT 100</code></pre><p><a href="https://dati.cultura.gov.it/sparql?default-graph-uri=&amp;query=PREFIX+arco%3A+%3Chttps%3A%2F%2Fw3id.org%2Farco%2Fontology%2Farco%2F%3E%0D%0APREFIX+dc%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0A%0D%0ASELECT+DISTINCT+%3Fobject+%3Flabel%0D%0AWHERE+%7B%0D%0A++%3Fobject+dc%3Atype+%22icona%22+%3B%0D%0A++++++++++a+arco%3AHistoricOrArtisticProperty+%3B%0D%0A++++++++++rdfs%3Alabel+%3Flabel+.%0D%0A%0D%0A++FILTER%28LANG%28%3Flabel%29+%3D+%22it%22%29%0D%0A++FILTER%28REGEX%28STR%28%3Flabel%29%2C+%22ambito+russo%22%2C+%22i%22%29%29%0D%0A%7D%0D%0AORDER+BY+%3Flabel%0D%0ALIMIT+100&amp;format=text%2Fhtml&amp;timeout=0&amp;signal_void=on"><u>RESULTS</u></a></p><p><strong>Query 2. Identifying the icon of Saint
 Charalampius</strong></p><pre class="query-code"><code>PREFIX arco: &lt;https://w3id.org/arco/ontology/arco/&gt;
 PREFIX a-cd:
 &lt;https://w3id.org/arco/ontology/context-description/&gt;
